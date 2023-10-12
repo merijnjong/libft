@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:10:02 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/12 17:40:00 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/12 18:19:22 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *nptr)
 		sign = -1;
 		i++;
 	}
-	else if (nptr[i] == '+')
+	else if (nptr[i] == '+' || nptr[i] >= 9 && nptr[i] <= 13 || nptr[i] == 32)
 		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
@@ -42,14 +42,14 @@ int	ft_atoi(const char *nptr)
 	return (result * sign);
 }
 
-// int	main(void)
-// {
-// 	const char nptr[20] = "--214-74 83647";
+int	main(void)
+{
+	const char nptr[20] = "	21 4-74 83647";
 
-// 	int result1 = ft_atoi(nptr);
-// 	int result2 = atoi(nptr);
+	int result1 = ft_atoi(nptr);
+	int result2 = atoi(nptr);
 
-// 	printf("%i\n", result1);
-// 	printf("%i", result2);
-// 	return (0);
-// }
+	printf("%i\n", result1);
+	printf("%i", result2);
+	return (0);
+}
