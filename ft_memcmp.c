@@ -6,13 +6,13 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:01 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/10 17:36:34 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/12 17:37:19 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
-// #include <stdio.h>
-// #include <string.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
 // int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // {

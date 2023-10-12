@@ -6,13 +6,13 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:26 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/10 17:37:17 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/12 17:38:12 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
-// #include <stdio.h>
-// #include <string.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

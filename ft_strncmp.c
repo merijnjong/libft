@@ -6,13 +6,13 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:22 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/10 17:37:10 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/12 17:38:06 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
-// #include <stdio.h>
-// #include <string.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
 int	ft_strncmp(char *s1, char *s2, int n)
 {

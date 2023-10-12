@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:10:06 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/11 13:52:36 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/12 17:36:38 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-int	main(void)
-{
-	size_t n = 17;
-	char s[] = "Hello world!";
+// int	main(void)
+// {
+// 	size_t n = 17;
+// 	char s[] = "Hello world!";
 
-	ft_bzero(s, n);
-	bzero(s, n);
+// 	ft_bzero(s, n);
+// 	bzero(s, n);
 
-	printf("%s", s);
-	return (0);
-}
+// 	printf("%s", s);
+// 	return (0);
+// }
