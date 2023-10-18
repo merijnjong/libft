@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:44:16 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/18 16:07:36 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/18 17:16:16 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <string.h>
 #include "libft.h"
 
-int	ft_iterate(char strc, const char *set)
+static int	ft_iterate(char strc, const char *set)
 {
 	while (*set != '\0')
 	{
