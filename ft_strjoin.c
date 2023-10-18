@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 14:02:55 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/18 13:05:16 by mjong            ###   ########.fr       */
+/*   Created: 2023/10/18 13:06:15 by mjong             #+#    #+#             */
+/*   Updated: 2023/10/18 13:25:04 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,37 +16,29 @@
 #include <stdlib.h>
 #include "libft.h"
 
-// int	ft_strlen(const char *str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (str[i] != '\0')
-// 	{
-// 		i++;
-// 	}
-// 	return (i);
-// }
-
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
-	size_t	substr_len;
+	size_t	j;
+	size_t	totlen;
 	char	*str;
 
 	i = 0;
-	substr_len = len;
-	if (start >= (unsigned int)ft_strlen(s))
-		return (NULL);
-	if (start + substr_len > (unsigned int)ft_strlen(s))
-		substr_len = (unsigned int)ft_strlen(s) - start;
-	str = (char *)malloc(substr_len + 1);
+	j = 0;
+	totlen = ft_strlen(s1) + ft_strlen(s2);
+	str = (char *)malloc(totlen + 1);
 	if (!str)
 		return (NULL);
-	while (i < substr_len)
+	while (s1[i] != '\0')
 	{
-		str[i] = s[start + i];
+		str[i] = s1[i];
 		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		str[i] = s2[j];
+		i++;
+		j++;
 	}
 	str[i] = '\0';
 	return (str);
@@ -54,6 +46,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 
 // int	main(void)
 // {
-// 	char *substring = ft_substr("Hello world", 6, 5);
-// 	printf("%s", substring);
+// 	char	*newstring = ft_strjoin("Hello", " world");
+
+// 	printf("%s", newstring);
 // }
