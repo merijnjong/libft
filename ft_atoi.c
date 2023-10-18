@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:10:02 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/12 18:24:16 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/18 12:56:10 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *nptr)
 		sign = -1;
 		i++;
 	}
-	else if (nptr[i] == '+' || nptr[i] >= 9 && nptr[i] <= 13 || nptr[i] == 32)
+	else if (nptr[i] == '+' || (nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
 		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{

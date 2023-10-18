@@ -1,40 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 15:11:11 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/17 16:15:53 by mjong            ###   ########.fr       */
+/*   Created: 2023/10/17 14:18:19 by mjong             #+#    #+#             */
+/*   Updated: 2023/10/18 12:55:03 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+// #include <unistd.h>
+// #include <ctype.h>
+// #include <stdio.h>
+// #include <string.h>
 
-char	*ft_strchr(const char *s, int c)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != c)
-	{
-		i++;
-	}
-	if (s[i] == c)
-		return ((char *)&s[i]);
-	return (NULL);
-}
-
-// int	main(void)
+// void	ft_putchar_fd(char c, int fd)
 // {
-// 	int c = 'e';
-// 	char *s1 = ft_strchr("Hello", c);
-// 	char *s2 = strchr("Hello", c);
-
-// 	printf("%p\n", s1);
-// 	printf("%p", s2);
-//	return (0);
+// 	write(1, &c, 1);
 // }
