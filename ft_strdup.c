@@ -6,33 +6,41 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 18:15:01 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/18 12:55:34 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/18 16:29:06 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
-// #include <stdio.h>
-// #include <string.h>
-// #include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "libft.h"
 
-// char	*ft_strdup(const char *s)
-// {
-// 	int			i;
-// 	const char	*s2;
+char	*ft_strdup(const char *s)
+{
+	size_t	i;
+	size_t	totlen;
+	char	*str;
 
-// 	i = 0;
-// 	while (s[i] != '\0')
-// 	{
-// 		s2 = s;
-// 		i++;
-// 	}
-// 	malloc(i);
-// 	return ((char *)s2);
-// }
+	i = 0;
+	totlen = ft_strlen(s);
+	str = (char *)malloc(totlen);
+	if (!str)
+		return (NULL);
+	while (s[i] != '\0')
+	{
+		str[i] = s[i];
+		i++;
+	}
+	return (str);
+}
 
 // int	main(void)
 // {
-// 	char *result = ft_strdup("Hello world");
-// 	printf("%s\n", result);
+// 	char *result1 = ft_strdup("Hello world");
+// 	char *result2 = strdup("Hello world");
+
+// 	printf("%s\n", result1);
+// 	printf("%s\n", result2);
 // 	return (0);
 // }
