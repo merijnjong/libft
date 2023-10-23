@@ -6,14 +6,10 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 17:25:14 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:03:17 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/23 15:29:50 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_intlencount(int n)

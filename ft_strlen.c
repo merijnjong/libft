@@ -6,13 +6,11 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:19 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/17 18:16:24 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/23 15:30:31 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_strlen(const char *str)
 {

@@ -6,13 +6,11 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:06 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/12 17:38:41 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/23 15:30:02 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // void	*ft_memmove(void *dest, const void *src, size_t n)
 // {

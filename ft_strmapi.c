@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 15:10:52 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:29:34 by mjong            ###   ########.fr       */
+/*   Created: 2023/10/23 15:16:08 by mjong             #+#    #+#             */
+/*   Updated: 2023/10/23 15:28:46 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= 0 && c <= 127)
+	int		i;
+	char	*str;
+
+	i = 0;
+	while (s[i] != '\0')
 	{
-		return (1);
+		i = f;
+		i++;
 	}
-	return (0);
+	str = (char *)malloc(i + 1);
+	if (!str)
+		return (NULL);
+	return (str);
 }
-
-// int	main(void)
-// {
-// 	int	num1 = ft_isascii(-1);
-// 	int num2 = isascii(-1);
-
-// 	printf("%i\n", num1);
-// 	printf("%i", num2);
-// 	return (0);
-// }

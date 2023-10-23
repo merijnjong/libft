@@ -6,13 +6,10 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:44:16 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/18 17:16:16 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/23 15:30:44 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 static int	ft_iterate(char strc, const char *set)

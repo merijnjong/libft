@@ -6,13 +6,11 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:10:58 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/12 17:37:10 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/23 15:29:54 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 // void	*ft_memchr(const void *s, int c, size_t n)
 // {

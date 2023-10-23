@@ -6,14 +6,10 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 13:06:15 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/18 13:25:04 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/23 15:30:20 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
