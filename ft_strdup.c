@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 18:15:01 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:17 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 15:37:37 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s)
 
 	i = 0;
 	totlen = ft_strlen(s);
-	str = (char *)malloc(totlen);
+	str = (char *)malloc(totlen + 1);
 	if (!str)
 		return (NULL);
 	while (s[i] != '\0')
@@ -28,6 +28,7 @@ char	*ft_strdup(const char *s)
 		str[i] = s[i];
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
 

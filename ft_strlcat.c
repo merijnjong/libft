@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:14 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:23 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 15:48:52 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,28 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	size_t	dst_len;
+	size_t	src_len;
 	size_t	i;
 	size_t	j;
-	size_t	dst_len;
 
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
 	i = 0;
-	j = 0;
-	dst_len = 0;
-	while (dst[dst_len] != '\0')
+	j = dst_len;
+	if (size <= dst_len)
+		return (size + src_len);
+	while (src[i] != '\0')
 	{
-		dst_len++;
-	}
-	while (src[i] != '\0' && i < size + dst_len)
-	{
+		if (i == size - dst_len - 1)
+			break ;
+		dst[j] = src[i];
 		i++;
-	}
-	while (dst[j] != '\0' && (i + j < size + dst_len))
-	{
 		j++;
 	}
-	dst[j] = '\0';
-	return (i + j);
+	if (size > dst_len)
+		dst[j] = '\0';
+	return (dst_len + src_len);
 }
 
 // int	main(void)
