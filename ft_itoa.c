@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 17:25:14 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:29:50 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 14:13:59 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static int	ft_intlencount(int n)
 	int	len;
 
 	len = 0;
+	if (n == 0)
+		return (1);
 	if (n < 0)
 		len++;
 	while (n)

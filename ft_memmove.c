@@ -6,44 +6,39 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:06 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:02 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 15:09:01 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// void	*ft_memmove(void *dest, const void *src, size_t n)
-// {
-// 	size_t			i;
-// 	unsigned char	temp;
-
-// 	i = 0;
-// 	while (((unsigned char *)src)[i] != '\0' && i < n)
-// 	{
-// 		temp = ((unsigned char *)src)[i];
-// 		((unsigned char *)dest)[i] = temp;
-// 		i++;
-// 	}
-// 	return ((void *)dest);
-// }
+#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t				i;
-	unsigned char		temp;
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	i = 0;
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-	while (s[i] != '\0' && i < n)
+	if (d == s)
+		return (dest);
+	if (d < s)
 	{
-		temp = s[i];
-		d[i] = temp;
-		i++;
+		while (n--)
+		{
+			*d++ = *s++;
+		}
 	}
-	return ((void *)d);
+	else
+	{
+		d += n;
+		s += n;
+		while (n--)
+		{
+			*(--d) = *(--s);
+		}
+	}
+	return (dest);
 }
 
 // int	main(void)
@@ -57,5 +52,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 // 	printf("%s\n", result1);
 // 	printf("%s", result2);
-//	return (0);
+// 	return (0);
 // }
