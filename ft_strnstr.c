@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:24 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:37 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 16:15:35 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
+	if (*little == '\0')
+		return ((char *)big);
 	while (big[i] != '\0' && i < len)
 	{
+		j = 0;
 		while (big[i + j] == little[j] && little[j] != '\0' && (i + j) < len)
 		{
 			j++;

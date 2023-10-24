@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:11 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 15:33:55 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 16:22:00 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i] != '\0')
 	{
 		if (s[i] == (char) c)
-			return ((char *)s + i);
+			return ((char *)&s[i]);
 		i++;
 	}
 	if ((char) c == '\0')

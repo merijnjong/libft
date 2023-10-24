@@ -6,23 +6,11 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:02:55 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:47 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/24 17:45:44 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// int	ft_strlen(const char *str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (str[i] != '\0')
-// 	{
-// 		i++;
-// 	}
-// 	return (i);
-// }
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
