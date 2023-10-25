@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:31:05 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:10 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:35:42 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,35 +76,3 @@ char	**ft_split(char const *s, char c)
 	str[i] = NULL;
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char	input_string[] = "Hello,world,how,are,you,,";
-// 	char	delimiter = ',';
-
-// 	char **result = ft_split(input_string, delimiter);
-
-// 	if (result)
-// 	{
-// 		int	i;
-
-// 		i = 0;
-// 		while (result[i] != NULL)
-// 		{
-// 			printf("Substring %d: %s\n", i, result[i]);
-// 			i++;
-// 		}
-// 		i = 0;
-// 		while (result[i] != NULL) {
-// 			free(result[i]);
-// 			i++;
-// 		}
-// 		free(result);
-// 	}
-// 	else
-// 	{
-// 		printf("Memory allocation failed or input string is NULL.\n");
-// 	}
-
-// 	return (0);
-// }

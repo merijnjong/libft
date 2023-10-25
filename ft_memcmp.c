@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:01 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 14:42:16 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:34:37 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	const char *s1 = "Hello";
-// 	const char *s2 = "";
-// 	size_t n = 2;
-
-// 	int result1 = ft_memcmp(s1, s2, n);
-// 	int result2 = ft_memcmp(s1, s2, n);
-
-// 	printf("%i\n", result1);
-// 	printf("%i", result2);
-//	return (0);
-// }

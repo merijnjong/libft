@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:14 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 15:48:52 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:35:59 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[j] = '\0';
 	return (dst_len + src_len);
 }
-
-// int	main(void)
-// {
-// 	char dst[] = "hellooooo";
-// 	const char src[] = "meeee";
-// 	size_t n = 15;
-
-// 	size_t num1 = ft_strlcat(dst, src, n);
-// 	size_t num2 = strlcat(dst, src, n);
-
-// 	printf("%zu\n", num1);
-// 	printf("%zu", num2);
-//	return (0);
-// }

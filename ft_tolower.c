@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:29 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:50 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:36:25 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-// int	main(void)
-// {
-// 	int result1 = ft_tolower('3');
-// 	int result2 = tolower('3');
-
-// 	printf("%i\n", result1);
-// 	printf("%i", result2);
-//	return (0);
-// }

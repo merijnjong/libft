@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:06 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 15:09:01 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:34:46 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,17 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int	main(void)
-// {
-//     char	source[] = "Hello, World!";
-//     char	destination[20] = "World!";
-
-//     size_t n = 20;
-//     char	*result1 = ft_memmove(destination, source, n);
-// 	char	*result2 = memmove(destination, source, n);
-
-// 	printf("%s\n", result1);
-// 	printf("%s", result2);
-// 	return (0);
-// }

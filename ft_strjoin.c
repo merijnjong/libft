@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 13:06:15 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:20 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:35:56 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char	*newstring = ft_strjoin("Hello", " world");
-
-// 	printf("%s", newstring);
-// }

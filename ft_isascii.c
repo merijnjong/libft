@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:10:52 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:29:34 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:34:22 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,3 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	int	num1 = ft_isascii(-1);
-// 	int num2 = isascii(-1);
-
-// 	printf("%i\n", num1);
-// 	printf("%i", num2);
-// 	return (0);
-// }

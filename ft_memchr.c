@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:10:58 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 14:40:20 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:34:34 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	const void *s = "0123456789";
-// 	int c = '5';
-// 	size_t n = 6;
-
-// 	const char *result1 = (const char *)ft_memchr(s, c, n);
-// 	const char *result2 = (const char *)memchr(s, c, n);
-
-// 	printf("%s\n", result1);
-// 	printf("%s", result2);
-//	return (0);
-// }

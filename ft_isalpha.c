@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:05:07 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:29:31 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:34:20 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,3 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	int	num1 = ft_isalpha('h');
-// 	int	num2 = isalpha('h');
-
-// 	printf("%i\n", num1);
-// 	printf("%i", num2);
-//	return (0);
-// }

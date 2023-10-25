@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:19 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/23 15:30:31 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:36:04 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ int	ft_strlen(const char *str)
 	}
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	int num1 = ft_strlen("hellomofo");
-// 	int num2 = strlen("hellomofo");
-// 	printf("%i\n", num1);
-// 	printf("%i", num2);
-//	return (0);
-// }

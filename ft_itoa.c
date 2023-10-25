@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 17:25:14 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 14:13:59 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:34:31 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char *result = ft_itoa(-2147483648);
-
-// 	printf("%s", result);
-// 	return (0);
-// }

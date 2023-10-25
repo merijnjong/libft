@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:11:22 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 16:09:55 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:36:08 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-// int	main(void)
-// {
-// 	int	n;
-
-// 	n = 4;
-// 	int num1 = ft_strncmp("hell", "hello", n);
-// 	int num2 = strncmp("hell", "hello", n);
-// 	printf("%i\n", num1);
-// 	printf("%i", num2);
-//	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:44:16 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/24 17:33:00 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/25 13:36:18 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, start, len);
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char	*trimmedstring = ft_strtrim("unununTRIMununun", "un");
-
-// 	printf("%s", trimmedstring);
-// }
