@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:31:05 by mjong             #+#    #+#             */
-/*   Updated: 2023/10/25 13:35:42 by mjong            ###   ########.fr       */
+/*   Updated: 2023/10/26 14:47:32 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,28 +48,40 @@ static int	ft_length(const char *s, char c, int i)
 	return (j);
 }
 
+void	ft_free(char **str)
+{
+	int	j;
+
+	j = 0;
+	while (str[j])
+	{
+		free(str[j]);
+		j++;
+	}
+	free(str);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**str;
-	int		strings;
 	int		i;
 	int		j;
 
-	strings = ft_stringcounter(s, c);
-	str = malloc((strings + 1) * sizeof(char *));
+	str = malloc((ft_stringcounter(s, c) + 1) * sizeof(char *));
 	i = 0;
 	j = 0;
 	if (!str || !s)
-		return (str);
-	while (i < strings)
+		return (NULL);
+	while (i < ft_stringcounter(s, c))
 	{
 		while (s[j] == c)
-		{
 			j++;
-		}
 		str[i] = ft_substr(s, j, ft_length(s, c, j));
 		if (str[i] == NULL)
-			free(str[i]);
+		{
+			ft_free(str);
+			return (NULL);
+		}
 		j += ft_length(s, c, j);
 		i++;
 	}
