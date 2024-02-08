@@ -6,7 +6,7 @@
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:09:24 by mjong             #+#    #+#             */
-/*   Updated: 2024/01/17 15:44:27 by mjong            ###   ########.fr       */
+/*   Updated: 2024/02/08 14:11:38 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,15 @@ char	*ft_strjoin2(char *s1, char *s2);
 int		ft_strlen2(const char *str);
 char	*ft_strchr2(char *s, int c);
 char	*ft_free2(char **str);
+int		ft_printf(const char *s, ...);
+int		ft_printc(char c);
+int		ft_printd(int n);
+int		ft_printp(void *p);
+int		ft_printp2(void *p);
+int		ft_prints(char *s);
+int		ft_printu(unsigned int n);
+int		ft_printx_lo(long n);
+int		ft_printx_up(long n);
+
 
 #endif
