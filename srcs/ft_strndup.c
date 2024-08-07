@@ -1,42 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjong <mjong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 15:10:02 by mjong             #+#    #+#             */
-/*   Updated: 2024/05/01 16:13:27 by mjong            ###   ########.fr       */
+/*   Created: 2024/07/25 14:08:10 by mjong             #+#    #+#             */
+/*   Updated: 2024/08/07 16:22:35 by mjong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	ft_atol(const char *nptr)
+char	*ft_strndup(const char *s, size_t n)
 {
-	long	i;
-	long	num;
-	long	result;
-	long	sign;
+	size_t	i;
+	size_t	totlen;
+	char	*str;
 
 	i = 0;
-	num = 0;
-	result = 0;
-	sign = 1;
-	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
-		i++;
-	if (nptr[i] == '-')
+	totlen = ft_strlen(s);
+	str = (char *)malloc(totlen + 1);
+	if (!str)
+		return (NULL);
+	while (s[i] != '\0' && i < n)
 	{
-		sign = -1;
+		str[i] = s[i];
 		i++;
 	}
-	else if (nptr[i] == '+')
-		i++;
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		num = nptr[i] - '0';
-		result = (result * 10) + num;
-		i++;
-	}
-	return (result * sign);
+	str[i] = '\0';
+	return (str);
 }
